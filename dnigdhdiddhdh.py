@@ -5,10 +5,4 @@
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         timer.join()
- elif '!tcp' in cmdl or 'TCP' in cmdl:
-        target, port, thread, t = get_info_l4()
-        threading.Thread(target=runflooder, args=(target, port, t, thread)).start()
-        timer = threading.Thread(target=countdown, args=(t,))
-        timer.start()
-        timer.join()
-### done
+ 
